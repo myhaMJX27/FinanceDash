@@ -38,6 +38,7 @@ export interface ITheme {
   colorTextMain: string;
   colorTextAdd1: string;
   colorTextAdd2: string;
+  colorTextAdd3: string;
   colorMain: string;
   colorAdd1: string;
   colorAdd2: string;

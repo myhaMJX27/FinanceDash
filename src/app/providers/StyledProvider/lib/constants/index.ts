@@ -25,6 +25,7 @@ export const constTheme: ITheme = {
   colorTextMain: '#000',
   colorTextAdd1: '#808080',
   colorTextAdd2: '#dddddd',
+  colorTextAdd3: '#4f4f4f',
   colorAdd2: '#123c69',
   colorAdd1: '#ac3b61',
   colorAdd3: '#ec2850',

@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import type { JSX } from 'react';
 
+import { Header } from '@/widgets/Header';
+
 import { AppProvider } from './providers/AppProvider';
 export const metadata: Metadata = {
-  title: 'Calculator',
+  title: 'FinanceDash',
   description: '',
 };
 
@@ -15,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <AppProvider>{children}</AppProvider>
+        <AppProvider>
+          <Header />
+          {children}
+        </AppProvider>
       </body>
     </html>
   );
