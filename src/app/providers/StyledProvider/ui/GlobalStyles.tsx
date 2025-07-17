@@ -15,15 +15,17 @@ const dynamicGlobalStyles = (theme: ITheme) => css`
   }
 
   body {
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr 50px;
     gap: ${theme.gaps.gapMedium};
   }
 
   header {
-    height: 50px;
+    justify-self: center;
+    height: 100%;
     width: 90%;
-    align-self: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,6 +35,19 @@ const dynamicGlobalStyles = (theme: ITheme) => css`
       gap: ${theme.gaps.gapMedium};
       align-items: center;
     }
+  }
+
+  footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ${theme.colorTextMain};
+  }
+
+  main {
+    height: 100%;
   }
 
   a {
