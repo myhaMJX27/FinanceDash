@@ -32,8 +32,8 @@ const dynamicGlobalStyles = (theme: ITheme) => css`
 
     > nav {
       display: flex;
-      gap: ${theme.gaps.gapMedium};
       align-items: center;
+      gap: ${theme.gaps.gapMedium};
     }
   }
 
