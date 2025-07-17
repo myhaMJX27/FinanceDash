@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-standard",
+  "customSyntax": "@stylelint/postcss-css-in-js",
+  "rules": {
+    "property-no-unknown": true,
+    "declaration-property-value-allowed-list": {
+      "opacity": ["0", "1", "0.[0-9]+"]
+    },
+    "function-url-quotes": "always",
+    "shorthand-property-no-redundant-values": true,
+    "declaration-block-no-duplicate-properties": true,
+    "media-feature-range-notation": "prefix"
+  }
+}
