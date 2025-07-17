@@ -11,13 +11,50 @@ const dynamicGlobalStyles = (theme: ITheme) => css`
     box-sizing: border-box;
     cursor: default;
     color: ${theme.colorTextMain};
+    font-family: sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr 50px;
+    gap: ${theme.gaps.gapMedium};
+  }
+
+  header {
+    justify-self: center;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > nav {
+      display: flex;
+      align-items: center;
+      gap: ${theme.gaps.gapMedium};
+    }
+  }
+
+  footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ${theme.colorTextMain};
+  }
+
+  main {
+    height: 100%;
   }
 
   a {
+    font-size: 0.875rem;
     text-decoration: none;
     color: transparent;
     cursor: pointer;
-    font-size: 1rem;
   }
 
   button {
