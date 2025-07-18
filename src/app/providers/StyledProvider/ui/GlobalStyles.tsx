@@ -100,6 +100,11 @@ const dynamicGlobalStyles = (theme: ITheme) => css`
   span {
     color: ${theme.colorTextAdd1};
   }
+
+  svg {
+    height: 40px;
+    width: 40px;
+  }
 `;
 export const GlobalStyles = () => {
   return <Global styles={dynamicGlobalStyles(constTheme)} />;
