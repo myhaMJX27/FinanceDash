@@ -1,12 +1,12 @@
-import type { ComponentType, ReactNode } from 'react';
-
-import type { TLogoStyle } from '../../model/types';
+import type { TLogoComponentsMap, TLogoStyleMap } from '../../model/types';
 import { styledLogoDark, styledLogoLight } from '../../ui/StyledLogos';
 
-export const CLogoStyles: Record<
-  TLogoStyle,
-  ComponentType<{ children?: ReactNode }>
-> = {
-  dark: styledLogoLight,
-  light: styledLogoDark,
-};
+export const CLogoStyleNames: TLogoStyleMap = {
+  dark: 'dark',
+  light: 'light',
+} as const;
+
+export const CLogoStyles: TLogoComponentsMap = {
+  dark: styledLogoDark,
+  light: styledLogoLight,
+} as const;
