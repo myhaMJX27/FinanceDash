@@ -1,11 +1,12 @@
+'use client';
 import type { JSX } from 'react';
 
-import { Logo } from '@/shared/ui/Logo';
+import { CLogoStyleNames, Logo } from '@/shared/ui/Logo';
 
 export const Footer = (): JSX.Element => {
   return (
     <footer>
-      <Logo type="light" />
+      <Logo type={CLogoStyleNames.dark} />
     </footer>
   );
 };

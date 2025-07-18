@@ -1,13 +1,13 @@
 import type { JSX } from 'react';
 
-import { Logo } from '@/shared/ui/Logo';
+import { CLogoStyleNames, Logo } from '@/shared/ui/Logo';
 
 import { HeaderNav } from './HeaderNav';
 
 export const Header = (): JSX.Element => {
   return (
     <header>
-      <Logo type="dark" />
+      <Logo type={CLogoStyleNames.light} />
       <HeaderNav />
     </header>
   );

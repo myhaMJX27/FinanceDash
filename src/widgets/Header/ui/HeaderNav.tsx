@@ -8,7 +8,7 @@ export const HeaderNav = (): JSX.Element => {
   return (
     <nav>
       {CHeaderLinks.map(({ href, children, type }) => (
-        <Link type={type} href={href} key={href}>
+        <Link type={type} href={href} key={href.toString()}>
           {children}
         </Link>
       ))}
